@@ -1,0 +1,250 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/****Form****/
+
+#form {
+	padding: 4px 0 0;
+	position: relative;
+}
+
+#form input,
+#form input[type="text"],
+#form input[type="password"],
+#form input[type="datetime"],
+#form input[type="date"],
+#form input[type="month"],
+#form input[type="time"],
+#form input[type="week"] {
+	width: 100%;
+	height: 41px;
+	float:left;
+	background-image: url(../img/bg_3.jpg);
+	background-repeat: repeat;
+	background-position: 0 0;
+	box-sizing: border-box;
+	-webkit-appearance: none;
+	-moz-box-sizing: border-box; /*Firefox 1-3*/
+	-webkit-box-sizing: border-box; /* Safari */
+	color: #807d6a;
+    font: 13px/21px 'Ubuntu', Arial, Helvetica, sans-serif;
+	border: 1px solid #c8bead;
+    padding: 6px 9px 8px;
+
+}
+
+
+#form textarea {
+	height: 400px;
+	width: 400px;
+	position: relative;
+	resize:none;
+	overflow: hidden;
+	box-sizing: border-box;
+	-webkit-appearance: none;
+	-moz-box-sizing: border-box; /*Firefox 1-3*/
+	-webkit-box-sizing: border-box; /* Safari */
+	float:left;
+	margin: 0;
+	color: #807d6a;
+	font: 13px/21px 'Ubuntu', Arial, Helvetica, sans-serif;
+	border: 1px solid #c8bead;
+	background-image: url(../img/bg_3.jpg);
+	background-repeat: repeat;
+	background-position: 0 0;
+	padding-top: 8px;
+	padding-right: 14px;
+	padding-bottom: 8px;
+	padding-left: 14px;
+}
+
+#form .placeholder {
+	transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-webkit-transition: 0.5s ease;
+	color: #807d6a;
+    font: 13px/21px 'Ubuntu', Arial, Helvetica, sans-serif;
+	border: 1px solid transparent;
+    padding: 8px 14px;
+	height: 41px !important;
+	width: 100% !important;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box; /*Firefox 1-3*/
+	-webkit-box-sizing: border-box; /* Safari */
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	cursor: text !important;
+	display: block;
+}
+
+#form .placeholder.hidden {
+	display: none;
+}
+
+#form.placeholder.focused, #form.placeholder.focus {
+	opacity: 0.1;
+}
+.placeholder:focus{
+	opacity: 0.1;
+}
+#form .message .placeholder {
+	height: 100% !important;
+}
+#form label {
+	position:relative;
+	display: block;
+	min-height: 41px;
+	float: left;
+	clear: left;
+	width: 321px;
+	margin-bottom: 15px;
+}
+
+#form label.message {
+	width: 460px;
+	margin-left: 0;
+}
+
+#form .error-message, #form .empty-message {
+	color: red;
+	font-size: 13px;
+	line-height:21px;
+	width:auto;
+	position: absolute;
+	z-index: 999;
+	top: 10px;
+	opacity: 0;
+	right: 5px;
+	float:left;
+	transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-webkit-transition: 0.5s ease;
+}
+
+#form .invalid .error-message, #form .empty .empty-message {
+	opacity: 1;
+}
+
+.btn_holder {
+	position: relative;
+	float: right;
+	margin: -15px 209px 0 0;
+}
+
+.btn_holder a {
+	margin-left: 20px;
+	color: #FFFFFF;
+	background-color: #09c;
+}
+
+.btn_holder a:hover { 
+	background: #fff; 
+	color: #000; 
+	
+	-webkit-box-shadow: 0 0 4px #aca497; 
+	-moz-box-shadow: 0 0 4px #aca497; 
+	-ms-box-shadow: 0 0 4px #aca497; 
+	-o-box-shadow: 0 0 4px #aca497; 
+	box-shadow: 0 0 4px #aca497;
+}
+
+.phone {
+	position: relative;
+}
+
+.message br {
+	height: 0;
+	line-height: 0;
+}
+
+#form .success-message {
+	display: none;
+	opacity: 0;
+	position: absolute;
+	width: 321px;
+	border: 1px solid #c8bead;
+	height: 98px;
+	text-align: center;
+	padding: 38px 10px;
+	z-index: 999;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box; /*Firefox 1-3*/
+	-webkit-box-sizing: border-box; /* Safari */
+	transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-webkit-transition: 0.5s ease;
+	background-image: url(../img/bg_3.jpg);
+	background-repeat: repeat;
+	background-position: 0 0;
+}
+
+#form.success .success-message {
+	display: block;
+	opacity: 1;
+}
+
+.success_wrapper {
+	position: relative;	
+}
+
+@media only screen and (max-width: 1199px) {
+	.btn_holder {margin-right: 81px;}
+}
+
+@media only screen and (max-width: 995px) {
+
+	.btn_holder {margin-right: 0;}
+	#form label {
+		float: none !important;	
+		width: 100%;
+		margin-left: 0 !important;
+	}
+	
+	#form input {
+		margin-bottom: 10px;
+	}
+	
+	
+	#form .success-message {
+		width: 100%;
+	}
+	
+	#form label.email {
+		width: 100%;
+		margin: 0;
+	}
+	
+	.map figure {
+		float: left !important;
+		margin-right: 0px !important;
+	}
+	
+	 #form label.message {width: 100%;}
+	
+	}
+
+@media only screen and (max-width: 767px) {
+
+	.map figure {
+		width: 100% !important;
+		float: none !important;
+		display: block !important;
+		margin-right: 0px !important;
+	}
+  
+ 	#form textarea {
+		width: 100%;
+  	}
+  
+}
+
+@media only screen and (max-width: 479px) {
+
+  #form textarea {
+		height: 200px !important;  
+  }
+
+}

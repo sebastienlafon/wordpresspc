@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_cats" value="name:id_categorie;datatype:int,name:c_libelle;datatype:string,name:id_categorie_mere;datatype:int" />
+</info>
